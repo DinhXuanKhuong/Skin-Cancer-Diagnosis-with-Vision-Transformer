@@ -13,9 +13,6 @@ model.eval()
 
 if torch.cuda.is_available():
     model.to('cuda')
-    print("Mô hình đã được chuyển sang GPU.")
-else:
-    print("Không tìm thấy GPU, mô hình sẽ chạy trên CPU.")
 
 id2label = model.config.id2label
 
@@ -24,7 +21,7 @@ classes = ['bkl', 'bcc', 'akiec', 'vasc', 'nv', 'mel', 'df']
 class_names = {
     'bkl': 'Benign keratosis-like lesions (Vết sẹo lành tính giống bệnh sừng)',
     'bcc': 'Basal cell carcinoma (Ung thư biểu mô tế bào đáy)',
-    'akiec': 'Actinic keratoses (Sừng hóa do ánh sáng)',
+    'akiec': 'Actinic keratoses and intraepithelial carcinoma (Dày sừng quang hóa và ung thư biểu mô tại chỗ)',
     'vasc': 'Vascular lesions (Vết tổn thương mạch máu)',
     'nv': 'Melanocytic nevi (Nốt ruồi sắc tố)',
     'mel': 'Melanoma (Ung thư hắc tố)',
@@ -53,7 +50,8 @@ def predict_single_image(image_path):
 
     return predicted_label, predicted_probability
 
-test_image_path = 'Test/bkl.jpg' 
+test_image_path = 'Test/image.png' 
+
 
 try:
     predicted_label, confidence = predict_single_image(test_image_path)
