@@ -84,7 +84,8 @@ pip3 install -r requirements.txt
 ```bash
 python main_ui.py
 ```
-
+### Example output
+![alt text](Output/image.png)
 ## References
 
 - [Ahmed Metawea - Skin Cancer Detection with ViT (Kaggle Notebook)](https://www.kaggle.com/code/ahmed1metawea/skin-cancer-detection-with-vision-transformer/notebook)
