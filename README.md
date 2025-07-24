@@ -72,10 +72,33 @@ git clone https://github.com/DinhXuanKhuong/Skin-Cancer-Diagnosis-with-Vision-Tr
 cd Skin-Cancer-Diagnosis-with-Vision-Transformer/
 ```
 ### Create virtual environment
+#### MacOS/Linux
 ```bash
 python3 -m venv env
-source ./env/Scripts/activate
+source ./env/bin/activate
 ```
+
+#### Window
+```bash
+python -m venv env
+.\env\Scripts\activate
+```
+
+If it says 'cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at this [link](https:/go.microsoft.com/fwlink/?LinkID=135170).
+
+Run your PowerShell as Administrator
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+
+Then type "Y" and enter.
+Then run the active command again
+
+```bash
+.\env\Scripts\activate
+```
+
 ### Installed required dependencies
 ```bash
 pip3 install -r requirements.txt
