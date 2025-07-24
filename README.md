@@ -68,8 +68,8 @@ This dataset contains 10,000+ dermatoscopic images of common pigmented skin lesi
 ## Get started 
 ### Clone the repository
 ```bash
-git clone https://github.com/DinhXuanKhuong/Skin-Cancer-Diagnosis-with-Vision-Transformer-.git
-cd Skin-Cancer-Diagnosis-with-Vision-Transformer-/
+git clone https://github.com/DinhXuanKhuong/Skin-Cancer-Diagnosis-with-Vision-Transformer.git
+cd Skin-Cancer-Diagnosis-with-Vision-Transformer/
 ```
 ### Create virtual environment
 ```bash
@@ -85,7 +85,7 @@ pip3 install -r requirements.txt
 python main_ui.py
 ```
 ### Example output
-![alt text](Output/image.png)
+![alt text](Output/output_new.png)
 ## References
 
 - [Ahmed Metawea - Skin Cancer Detection with ViT (Kaggle Notebook)](https://www.kaggle.com/code/ahmed1metawea/skin-cancer-detection-with-vision-transformer/notebook)
